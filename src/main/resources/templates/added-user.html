@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"><head>
+    <title>Added User</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>So you have just added this user: </h1>
+<p th:text="'id: ' + ${user.id}" />
+<p th:text="'user was called: ' + ${user.name}" />
+<a href="/createUser">Submit another message</a>
+<a href="/index">Go to main page</a>
+
+</body>
+</html>
